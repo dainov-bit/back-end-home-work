@@ -1,5 +1,8 @@
 package app.domain;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
+
 import java.math.BigDecimal;
 import java.util.Objects;
 
@@ -16,6 +19,8 @@ public class MusicProduct {
         this.song = song;
         this.price = price;
     }
+
+
 
     public Long getId() {
         return id;
