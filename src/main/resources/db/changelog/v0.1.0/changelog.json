@@ -1,0 +1,17 @@
+{
+  "databaseChangeLog": [
+    {
+      "include": {
+        "file": "create-table-users.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "create-table-products.json",
+        "relativeToChangelogFile": true
+      }
+    }
+
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "create_table_users-080620241458",
+        "author": "Artem@Chebotarov.de",
+        "changes": [
+          {
+            "createTable": {
+              "tableName": "users",
+              "columns": [
+                {
+                  "column": {
+                  "name": "id",
+                    "type": "SERIAL",
+                    "constraints": {
+                      "primaryKey": true
+                      
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "email",
+                    "type": "varchar(255)"
+                  }
+                },
+                {
+                "column": {
+                  "name": "password",
+                  "type": "varchar(64)"
+                }
+                }
+              ]
+            }
+          }
+
+        ]
+      }
+
+    }
+
+  ]
+}

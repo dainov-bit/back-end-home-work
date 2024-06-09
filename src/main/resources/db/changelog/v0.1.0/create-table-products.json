@@ -1,0 +1,56 @@
+{
+  "databaseChangeLog": [
+    {
+  "changeSet": {
+    "id": "create_table_products-08062024-1518",
+    "author": "artem@chebotarov.de",
+    "changes": [
+      {
+        "createTable": {
+          "tableName": "products",
+  "remarks": "Таблица продуктов",
+          "columns": [
+            {
+            "column": {
+              "name": "id",
+              "type": "SERIAL",
+              "constraints": {
+                "primaryKey": true
+              }
+            }
+
+
+            },
+            {
+              "column": {
+                "name": "title",
+                "type": "varchar(100)",
+                "remarks": "Описание продукта"
+              }
+            },
+            {
+              "column": {
+                "name": "price",
+                "type": "DECIMAL(10,2)",
+                "remarks": "Цена продукта"
+              }
+            },
+{
+"column": {
+"name": "active",
+"type": "boolean"
+}
+}
+
+          ]
+
+        }
+      }
+
+    ]
+  }
+
+    }
+  ]
+
+}
